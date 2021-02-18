@@ -26,6 +26,62 @@ const styles = StyleSheet.create({
   buttonStyle: {
     padding: 100,
   },
+  listItem: {
+    borderWidth: 2,
+    borderColor: "#ccc",
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    marginVertical: 10,
+    backgroundColor: "white",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "100%",
+  },
+  listContainer: {
+    flex: 1,
+    width: "75%",
+    marginTop: 5,
+  },
+  list: {
+    flexGrow: 1,
+  },
+  touchableStyle: {
+    paddingHorizontal: 35,
+    paddingVertical: 10,
+  },
+  itemTitle: {
+    width: "50%",
+  },
+  buttonSection: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    width: "40%",
+  },
 });
 
 export default styles;
+
+/*
+
+listItem: {
+    borderWidth: 1,
+    borderColor: "#ccc",
+    padding: 15,
+    marginVertical: 10,
+    backgroundColor: "white",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "100%",
+  },
+  listContainer: {
+    flex: 1,
+    width: "100%",
+  },
+  list: {
+    flexGrow: 1,
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+
+*/
