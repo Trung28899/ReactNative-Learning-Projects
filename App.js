@@ -1,10 +1,12 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import StartApp from "./App/StartApp/StartApp";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <View style={styles.screen}>
+      <Header title="Learning App" />
       <StartApp />
     </View>
   );
