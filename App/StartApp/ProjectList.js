@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  Text,
-  FlatList,
-  TouchableOpacity,
-  Touchable,
-} from "react-native";
+import { View, Text, FlatList, TouchableOpacity } from "react-native";
 import styles from "./StartAppStyle";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -47,19 +41,8 @@ const renderListItem = (itemData) => {
   );
 };
 
-const ProjectList = () => {
-  const projects = [
-    "Project 1",
-    "Project 2",
-    "Project 3",
-    "Project 4",
-    "Project 5",
-    "Project 6",
-    "Project 7",
-    "Project 8",
-    "Project 9",
-    "Project 10",
-  ];
+const ProjectList = ({ data, editOn }) => {
+  const projects = data;
   return (
     <View style={styles.listContainer}>
       <FlatList
@@ -73,18 +56,3 @@ const ProjectList = () => {
 };
 
 export default ProjectList;
-
-// const renderListItem = (projectName, index) => {
-//   console.log(projectName);
-//   return (
-//     <View style={styles.listItem} key={index}>
-//       <Text>{projectName}</Text>
-//     </View>
-//   );
-// };
-
-/* <ScrollView contentContainerStyle={styles.list}>
-        {projects.map((projectName, index) =>
-          renderListItem(projectName, index)
-        )}
-      </ScrollView> */

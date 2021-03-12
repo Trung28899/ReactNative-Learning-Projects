@@ -1,10 +1,15 @@
 import React from "react";
 import { View, StyleSheet, TextInput } from "react-native";
 
-const CustomInput = () => {
+const CustomInput = (props) => {
+  const { onChange } = props;
   return (
     <View style={styles.inputContainer}>
-      <TextInput placeholder="Project Name..." style={styles.input} />
+      <TextInput
+        placeholder="Project Name..."
+        style={styles.input}
+        onChangeText={onChange}
+      />
     </View>
   );
 };

@@ -6,7 +6,7 @@ const MainButton = (props) => {
     <TouchableOpacity
       activeOpacity={0.6}
       onPress={() => {
-        console.log("pressed");
+        props.onPress();
       }}
     >
       <View
