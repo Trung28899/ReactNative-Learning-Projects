@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: "row",
     justifyContent: "space-around",
-    width: "90%",
+    width: "70%",
     paddingTop: 10,
   },
   buttonStyle: {
@@ -50,13 +50,20 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   itemTitle: {
-    width: "50%",
+    width: "65%",
+    alignItems: "flex-end",
   },
   buttonSection: {
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
     width: "40%",
+  },
+  iconSection: {
+    width: "10%",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
   },
 });
 
