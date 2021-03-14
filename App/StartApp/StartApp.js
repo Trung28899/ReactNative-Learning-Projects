@@ -10,7 +10,11 @@ import ProjectList from "./ProjectList";
 const StartApp = () => {
   const [projectName, setProjectName] = useState("");
   const [editOn, setEditOn] = useState(false);
-  const projectList = ["Project 1", "Project 2", "Project 3"];
+  const projectList = [
+    { id: 1, name: "Project 1" },
+    { id: 2, name: "Project 2" },
+    { id: 3, name: "Project 3" },
+  ];
   const onChangeText = (enteredText) => {
     setProjectName(enteredText);
   };

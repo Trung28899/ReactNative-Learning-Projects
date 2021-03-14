@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   },
   listItem: {
     borderWidth: 2,
+    borderRadius: 10,
     borderColor: "#ccc",
     paddingHorizontal: 10,
     paddingVertical: 8,
